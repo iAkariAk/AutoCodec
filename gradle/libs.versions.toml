@@ -1,0 +1,12 @@
+[versions]
+auto-service = "1.1.1"
+javapoet = "0.7.0"
+maven-publishing = "0.31.0"
+
+[libraries]
+auto-service = { module = "com.google.auto.service:auto-service", version.ref = "auto-service" }
+auto-service-annotations = { module = "com.google.auto.service:auto-service-annotations", version.ref = "auto-service" }
+javapoet = { module = "com.palantir.javapoet:javapoet", version.ref = "javapoet" }
+
+[plugins]
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "maven-publishing" }
