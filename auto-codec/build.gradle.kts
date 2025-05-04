@@ -1,16 +1,9 @@
 plugins {
     `java-library`
-    signing
-
 }
 
 repositories {
     mavenCentral()
-}
-
-signing {
-    useGpgCmd()
-    sign( publishing.publications)
 }
 
 dependencies {

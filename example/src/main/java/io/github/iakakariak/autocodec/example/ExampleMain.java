@@ -36,7 +36,7 @@ public class ExampleMain {
 
     public void registerPayloads(RegisterPayloadHandlersEvent event) {
         var registrar = event.registrar("1");
-        registrar.playBidirectional(CialloPacket.TYPE, CialloCodes.STREAM_CODEC, (packet, context) -> {
+        registrar.playBidirectional(CialloPacket.TYPE, CialloPacketCodes.STREAM_CODEC, (packet, context) -> {
             context.enqueueWork(() -> {
                 LOGGER.info("CialloPacket～(∠・ω< )⌒☆ Player: {}, whose profile: {}, whose main hand: {}", packet.name(), packet.profile(), packet.hand());
             });
